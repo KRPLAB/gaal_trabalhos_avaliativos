@@ -1,0 +1,6 @@
+main1.c
+cJSON.c
+cJSON.h
+*.o
+determinante_triangulacao
+.vscode/
