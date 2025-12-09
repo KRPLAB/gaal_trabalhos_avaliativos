@@ -37,10 +37,7 @@ int triangular_matriz(double matriz[MAX_DIM][MAX_DIM], PassoTriangulacao passos[
         }
 
         // --- REGISTRO DO PASSO (LOG) ---
-        passos[*num_passos].passo = *num_passos;
-        passos[*num_passos].linha_pivo = p;
-        passos[*num_passos].coluna_pivo = p;
-        passos[*num_passos].valor_pivo = matriz[p][p];
+        atualiza_passo_triangulacao(&passos[*num_passos], *num_passos, p, p, matriz[p][p]);
         (*num_passos)++;
 
         // --- PARTE B: ELIMINAÇÃO (ZERAR AS LINHAS DE BAIXO) ---
